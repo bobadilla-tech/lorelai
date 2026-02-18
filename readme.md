@@ -11,7 +11,7 @@ A [package](#documentation) and [command line tool](#cli-tool) to generate
 
 [Blog explaining this package](https://ultirequiem.hashnode.dev/lorelai)
 
-Checkout the code coverage at: https://bobadilla-tech.github.io/lorelai/#file0
+Checkout the code coverage at: https://bobadilla-tech.github.io/lorelai
 
 ## Install
 
