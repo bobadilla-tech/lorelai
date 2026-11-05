@@ -36,4 +36,6 @@ jobs:
             echo "::notice::This PR edits workflow files, which the built-in token cannot merge. Merge it by hand."
             exit 0
           fi
-          gh pr merge --auto --squash "$PR_URL"
+          # --auto waits for required checks; if they already passed the PR is "clean" and --auto
+          # errors, so fall back to merging directly (the ruleset still enforces the CI check).
+          gh pr merge --auto --squash "$PR_URL" || gh pr merge --squash "$PR_URL"
