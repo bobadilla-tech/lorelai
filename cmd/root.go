@@ -113,7 +113,7 @@ func run(cmd *cobra.Command, args []string) error {
 		textNoNewline := textStr[0 : len(textStr)-2] // Remove the new line at the end
 
 		if colors {
-			chigo.PrintWithColors(textNoNewline)
+			fmt.Print(chigo.Colorize(textNoNewline))
 			return nil
 		}
 
